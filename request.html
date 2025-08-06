@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voucher Request</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Qhowmenz Consult</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.php">Admin</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Request a Voucher</h1>
+  </section>
+
+  <section style="padding: 2em;">
+    <form action="submit_request.php" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required><br><br>
+      <input type="text" name="institution" placeholder="Institution" required><br><br>
+      <input type="text" name="phone" placeholder="Phone Number" required><br><br>
+      <select name="voucher_type" required>
+        <option value="">Select Voucher Type</option>
+        <option value="BECE">BECE</option>
+        <option value="WASSCE">WASSCE</option>
+        <option value="NAPTEX">NAPTEX</option>
+      </select><br><br>
+      <textarea name="message" placeholder="Additional Message (Optional)"></textarea><br><br>
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+</body>
+</html>
